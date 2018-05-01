@@ -1,0 +1,25 @@
+body {
+  background: #3B444C;
+}
+
+img {
+  width: 30%;
+  float: left;
+  margin: 1.66%;
+}
+
+h2 {
+  color: #fafbf7;
+  font-family: Exo;
+  margin-left: 1.66%;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f1f1f1;
+  width: 96.68%;
+  padding-bottom: 2%;
+}
+
+#about_button {
+  background: black;
+}

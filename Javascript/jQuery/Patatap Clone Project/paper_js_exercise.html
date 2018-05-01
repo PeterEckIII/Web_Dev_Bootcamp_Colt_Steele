@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paper JS Exercise</title>
+  <script src="paper-full.js"></script>
+  <link rel="stylesheet" href="circles.css">
+  <script type="text/paperscript" canvas="myCanvas">
+  function buildRow(num) {
+    var x = 30;
+    var y = 30;
+    var z = 10;
+    for (var k = 0; k <= 10; k++) {
+      for (var i = 0; i <= num; i++) {
+        new Path.Circle(new Point(x, y), z).fillColor = "green";
+        x += 60;
+      }
+      x = 30;
+      y += 60;
+    }
+  }
+  buildRow(10);
+  </script>
+</head>
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

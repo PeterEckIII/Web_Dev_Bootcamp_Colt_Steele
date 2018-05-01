@@ -1,0 +1,50 @@
+/* font-family */
+p {
+  font-family: Arial;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+/* font-size */
+/* em is relative to the size of the element's parent
+  If the parent has font-size: 16px (default), setting
+  a 2.0em on the child makes it 2x as big, given it
+  size 32px
+ */
+
+body {
+  font-size: 20px;
+}
+
+span {
+  font-size: 2em;
+}
+
+/* font-weight */
+p {
+  font-weight: bold;
+}
+
+
+/* line-height */
+p {
+  line-height: 1.5;
+}
+
+/* text-align */
+body {
+  text-align: center;
+}
+
+/* text-decoration */
+h1 {
+  text-decoration: underline;
+}
+
+
+/* CUSTOM FONTS LESSON */
+.first_p {
+  font-family: Indie Flower;
+}

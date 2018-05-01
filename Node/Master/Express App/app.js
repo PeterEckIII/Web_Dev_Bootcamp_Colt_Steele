@@ -1,0 +1,35 @@
+var express = require("express");
+var app = express();
+
+app.get("/", function(req, res) {
+  res.send("Hi there, welcome to my assignment");
+});
+
+app.get("/speak/:animal", function(req, res) {
+  var animal = req.params.animal.toLowerCase();
+  var sounds = {
+    pig: "Oink!",
+    cow: "Moooo!",
+    dog: "Woof!",
+    cat: "Meow",
+    goldfish: "...I forget..."
+  };
+  var sound = sounds[animal];
+  res.send("The " + animal + " goes " + sound);
+});
+
+app.get("/repeat/:message/:times", function(req, res) {
+  var message = req.params.message;
+  var times = Number(req.params.times);
+  var result = "";
+  for (var i = 0; i < times; i++) {
+    result += message + " ";
+  }
+  res.send(result);
+});
+
+app.get("*", function(req, res) {
+  res.send("404 Page Not Found");
+});
+
+app.listen(3000, () => console.log("I'm listening on 3000!"));
