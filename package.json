@@ -1,0 +1,23 @@
+{
+  "name": "web-dev-bootcamp",
+  "version": "1.0.0",
+  "description": "A collection of lessons, exercises, and projects made while following the Web Dev Bootcamp by Colt Steele",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterEckIII/Web_Dev_Bootcamp_Colt_Steele.git"
+  },
+  "author": "Peter Eck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterEckIII/Web_Dev_Bootcamp_Colt_Steele/issues"
+  },
+  "homepage": "https://github.com/PeterEckIII/Web_Dev_Bootcamp_Colt_Steele#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}
